@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+      "name": "Sanr Phaamr moi nef",
+      "price": "20000",
+      "image": "Moi",
+      "desc": "moi",
+      "id": 3
+    },
+    {
+      "name": "Toi la san pham moi",
+      "price": "Gias nef",
+      "image": "anh ne",
+      "desc": "Desc ne",
+      "id": 4
+    }
+  ]
+}

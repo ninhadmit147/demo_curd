@@ -1,0 +1,20 @@
+<h2>Update product</h2>
+<form (submit)="onHandleUpdate()" #formAdd="ngForm" action="">
+
+    <label for="">Name</label>
+    <br>
+    <input type="text" name="name" [(ngModel)]="product.name">
+    <br>
+    <label for="">Image</label>
+    <br>
+    <input type="text" name="image" [(ngModel)]="product.image">
+    <br>
+    <label for="">Price</label>
+    <br>
+    <input type="text" name="price" [(ngModel)]="product.price">
+    <br>
+    <label for="">Desc</label>
+    <br>
+    <input type="text" name="desc" [(ngModel)]="product.desc">
+    <button>Update</button>
+</form>

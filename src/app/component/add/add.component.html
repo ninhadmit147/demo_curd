@@ -1,0 +1,20 @@
+<h2>Add product</h2>
+<form (submit)="onHandleAdd()" #formAdd="ngForm" action="">
+
+    <label for="">Name</label>
+    <br>
+    <input type="text" name="prodName" [(ngModel)]="product.name">
+    <br>
+    <label for="">Image</label>
+    <br>
+    <input type="text" name="prodName" [(ngModel)]="product.image">
+    <br>
+    <label for="">Price</label>
+    <br>
+    <input type="text" name="prodName" [(ngModel)]="product.price">
+    <br>
+    <label for="">Desc</label>
+    <br>
+    <input type="text" name="prodName" [(ngModel)]="product.desc">
+    <button>Add</button>
+</form>

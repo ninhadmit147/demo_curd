@@ -1,0 +1,25 @@
+<table border="">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>name</th>
+            <th>price</th>
+            <th>image</th>
+            <th>desc</th>
+            <th><a routerLink="/add">Add</a></th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let item of products">
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.name}}</td>
+            <td>{{item.price}}</td>
+            <td>{{item.image}}</td>
+            <td>{{item.desc}}</td>
+            <td style="padding: 5px;">
+                <button (click)="Remove(item.id)">remove</button>
+                <a routerLink="/update/{{item.id}}">Update</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
